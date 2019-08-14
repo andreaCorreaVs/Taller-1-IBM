@@ -1,0 +1,47 @@
+    {
+    "name": "mychannel",
+    "description": "Network on IBP v2",
+    "version": "1.0.0",
+    "client": {
+        "organization": "votermsp"
+    },
+    "organizations": {
+        "votermsp": {
+            "mspid": "votermsp",
+            "peers": [
+                "n62acf5-voterpeer.jose-blockchain-codeday.us-south.containers.appdomain.cloud:7051"
+            ],
+            "certificateAuthorities": [
+                "n62acf5-voterca.jose-blockchain-codeday.us-south.containers.appdomain.cloud:7054"
+            ]
+        }
+    },
+    "orderers": {
+        "n62acf5-orderer1.jose-blockchain-codeday.us-south.containers.appdomain.cloud:7050": {
+            "url": "grpcs://n62acf5-orderer1.jose-blockchain-codeday.us-south.containers.appdomain.cloud:7050",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICIjCCAcigAwIBAgIUQyKcwzk7nAqk9RiagyazEYYXr1YwCgYIKoZIzj0EAwIw\nZTELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRYwFAYDVQQDEw1PcmRlcmVy\nQ0EtdGxzMB4XDTE5MDgwNjA5MzYwMFoXDTM0MDgwMjA5MzYwMFowZTELMAkGA1UE\nBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQKEwtIeXBlcmxl\nZGdlcjEPMA0GA1UECxMGRmFicmljMRYwFAYDVQQDEw1PcmRlcmVyQ0EtdGxzMFkw\nEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEKbo6YJsOAD3d449NAJZ7pAeeQTg9en9+\nvT+unvT9eRiggtBbwKM4FPEtRnEgdRG+0+nWzkLZNjeZSR6O5TpUYaNWMFQwDgYD\nVR0PAQH/BAQDAgEGMBIGA1UdEwEB/wQIMAYBAf8CAQEwHQYDVR0OBBYEFJfrtNhs\nq3z18R1X6TDNmb1IzTTQMA8GA1UdEQQIMAaHBAqwFPkwCgYIKoZIzj0EAwIDSAAw\nRQIhAL/3LsklQC0POHFwIw5UM1DeDh4dgd2yDqEfIWziR1abAiA6QwLPjyVaVj+/\nwX1kgp6qS8bvoTNRikYiL1D1+znPeA==\n-----END CERTIFICATE-----\n"
+            }
+        }
+    },
+    "peers": {
+        "n62acf5-voterpeer.jose-blockchain-codeday.us-south.containers.appdomain.cloud:7051": {
+            "url": "grpcs://n62acf5-voterpeer.jose-blockchain-codeday.us-south.containers.appdomain.cloud:7051",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICHjCCAcSgAwIBAgIUMBXMv7VFLM7WYNXVkSJCEJKT32YwCgYIKoZIzj0EAwIw\nYzELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRQwEgYDVQQDEwtWb3RlckNB\nLXRsczAeFw0xOTA4MDYwOTM1MDBaFw0zNDA4MDIwOTM1MDBaMGMxCzAJBgNVBAYT\nAlVTMRcwFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEChMLSHlwZXJsZWRn\nZXIxDzANBgNVBAsTBkZhYnJpYzEUMBIGA1UEAxMLVm90ZXJDQS10bHMwWTATBgcq\nhkjOPQIBBggqhkjOPQMBBwNCAARtPNtJjQOOWix+PGV1BHT2pw6Yuq3KKEHQvN5P\nxcOT6rjerqcZHH06r9RPlO07G6jPTQxhXnE7ThwFx2M4B4Hgo1YwVDAOBgNVHQ8B\nAf8EBAMCAQYwEgYDVR0TAQH/BAgwBgEB/wIBATAdBgNVHQ4EFgQUhqAA3ZhNLq6t\nzOIZBWapg9TvcPYwDwYDVR0RBAgwBocECrAU+TAKBggqhkjOPQQDAgNIADBFAiEA\nhxTxd5+sDDfQKcWxR4bXjXJqa+98moR/HERK+YGhZD0CIHiOKTe8GBzPGBh1ZKAM\nsPxbqwU5CVU43IL3qNVaZ4wE\n-----END CERTIFICATE-----\n"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "n62acf5-voterpeer.jose-blockchain-codeday.us-south.containers.appdomain.cloud"
+            }
+        }
+    },
+    "certificateAuthorities": {
+        "n62acf5-voterca.jose-blockchain-codeday.us-south.containers.appdomain.cloud:7054": {
+            "url": "https://n62acf5-voterca.jose-blockchain-codeday.us-south.containers.appdomain.cloud:7054",
+            "caName": "ca",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\r\nMIIDPDCCAqWgAwIBAgIJPcy3aTXmLYjbMA0GCSqGSIb3DQEBBQUAMIGxMVQwUgYD\r\nVQQDE0tuNjJhY2Y1LXZvdGVyY2Euam9zZS1ibG9ja2NoYWluLWNvZGVkYXkudXMt\r\nc291dGguY29udGFpbmVycy5hcHBkb21haW4uY2xvdWQxCzAJBgNVBAYTAlVTMRcw\r\nFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEQMA4GA1UEBxMHUmFsZWlnaDEMMAoGA1UE\r\nChMDSUJNMRMwEQYDVQQLEwpCbG9ja2NoYWluMB4XDTE5MDgwNjA5MzcwNFoXDTIw\r\nMDgwNTA5MzcwNFowgbExVDBSBgNVBAMTS242MmFjZjUtdm90ZXJjYS5qb3NlLWJs\r\nb2NrY2hhaW4tY29kZWRheS51cy1zb3V0aC5jb250YWluZXJzLmFwcGRvbWFpbi5j\r\nbG91ZDELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRAwDgYD\r\nVQQHEwdSYWxlaWdoMQwwCgYDVQQKEwNJQk0xEzARBgNVBAsTCkJsb2NrY2hhaW4w\r\ngZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAI6stQHYNSmBCPKBnnbZPaqw99O+\r\nnZJAvyx+yPSTjHzjn8/KmADanaUrA/+vpDN95kirHx7UIUy2WsBUXYmro3oEHywS\r\n6V1lFtNMNF7R1I8oyiOewoA4fhemWh2r2raD4uUZ/f3Cswnrd+lAbStkSx4IdoDC\r\nJyTwfzhCsAXb/EX5AgMBAAGjWjBYMFYGA1UdEQRPME2CS242MmFjZjUtdm90ZXJj\r\nYS5qb3NlLWJsb2NrY2hhaW4tY29kZWRheS51cy1zb3V0aC5jb250YWluZXJzLmFw\r\ncGRvbWFpbi5jbG91ZDANBgkqhkiG9w0BAQUFAAOBgQBRCV/+WK0L9aswKwGtKFbm\r\nMNEMLgnqAZoaoqpzVqxgtiIcTXModYT6kxzboaqsWYONRgq4WrQFyYaKST7HGUgV\r\nc/fjF8W1A4kkPbwY5v8cz8B9Qzbsqxd2qbk6j23p3iQwRQjm3uUToMb6XAxFjoNn\r\nMwcK3rbjL1Ly1GTIWUW2wg==\r\n-----END CERTIFICATE-----\r\n"
+            }
+        }
+    }
+}
