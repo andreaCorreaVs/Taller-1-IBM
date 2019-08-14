@@ -52,7 +52,7 @@ En este hands-on  comprenderemos las bases de una red blockchain y los componen
 ## ¿Que es Blockchain? 
 
 
-Blockchain es una base de datos distribuida que funciona como un "ledger" (libro contable en inglés), en el cual se registran todas las transacciones que los miembros de la red ejecutan entre si. En Blockchain todos los miembros cuanta con una copia de los datos.
+Blockchain es una base de datos distribuída que funciona como un "ledger" (libro contable en inglés), en el cual se registran todas las transacciones que los miembros de la red ejecutan entre si. En Blockchain todos los miembros cuentan con una copia de los datos.
 Los participantes de la red son los que gobiernan y acuerdan los cambios a registrar a través de un mecanismo de consenso. No hay terceros involucrados, todo es entre peers.
 
 <p align="center">
@@ -62,8 +62,8 @@ Los participantes de la red son los que gobiernan y acuerdan los cambios a regis
 
 ### Smart Contract 
 
-Un Smart Contract es la manera digital de representar los contratos por los que se rigen las transacciones de la red. A la hora de realizar una transacción en una red de blockchain, se realiza una petición al Smart Contract y este es el que se encarga de la modificación del ledge. 
-La lógica de el Smart Contract se puede escribir en varios lenguajes de programación y se trabaja de una forma muy similar a POO (programación orientada a objetos), llevaremos esto a la práctica en el lab1 donde generamos nuestro primero smart contract. En el caso de HyperLedger Fabric, el codigo resultante se le denomina chaincode. El chaincode es el código que define los activos en la red de negocios y las instrucciones de las transacciones que modifican los mismos.
+Un Smart Contract es la manera digital de representar los contratos por los que se rigen las transacciones de la red. A la hora de realizar una transacción en una red de blockchain, se realiza una petición al Smart Contract y este es el que se encarga de la modificación del ledger. 
+La lógica del Smart Contract se puede escribir en varios lenguajes de programación y se trabaja de una forma muy similar a POO (programación orientada a objetos), llevaremos esto a la práctica en el lab1 donde generamos nuestro primero smart contract. En el caso de HyperLedger Fabric, el código resultante se le denomina chaincode. El chaincode es el código que define los activos en la red de negocios y las instrucciones de las transacciones que modifican los mismos.
 
 
 *Nota:* **Activo (Asset)**: Es cualquier cosa que podemos apropiar o controlar y que nos genera valor.
@@ -72,7 +72,7 @@ La lógica de el Smart Contract se puede escribir en varios lenguajes de program
 ### Hyperledger Fabric 
 
 
-Hyperledger Fabric es una implementación open source de un ledger distribuido **permisionado**. El ledger distribuido es una base de datos distribuida que es replicada y sincronizada con los participantes de la red en la que se registran las transacciones entre los participantes. 
+Hyperledger Fabric es una implementación open source de un ledger distribuido **permisionado**. El ledger distribuido es una base de datos distribuída que es replicada y sincronizada con los participantes de la red en la que se registran las transacciones entre los participantes. 
 
 
 Hyperledger es un esfuerzo open-source y colaborativo de la Linux Foundation que tiene como objetivo avanzar las tecnologías blockchain en las distintas ramas de las industrias. Fue fundado en 2015 por treinta empresas, dentro de las cuales se encuentra IBM, quien aportó el proyecto OpenBlockcahin el cual brindó conocimiento para Hyperledger Fabric. Actualmente Hyperledger Fabric es uno de los proyectos de Hyperledger más conocidos,con más de 120 empresas que lo apoyan siendo una de ellas IBM como premier sponsor y un contribuyente de código. 
