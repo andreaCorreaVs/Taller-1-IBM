@@ -1,9 +1,6 @@
 <template>
   <div class="posts">
     <h1>Seleccionar Candidato</h1>
-    <input type="radio" id="one" value="Republican" v-model="picked">
-    <label for="one">Donald Trump (Republican)</label>
-    <br>
     <input type="radio" id="one" value="Partido Nacional" v-model="picked">
     <label for="one">Luis Lacalle Pou (Partido Nacional)</label>
     <br>
