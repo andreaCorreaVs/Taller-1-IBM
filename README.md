@@ -34,11 +34,11 @@ Estos prerrequisitos deben ser cumplidos antes del hands-on, durante el mismo no
 
   Hyperledger Fabric local funciona gracias a que se despliega dentro de contenedores Docker y es orquestada usando Docker compose. Por esto es necesario tener ambos instalados.
 
-  * 1 - Docker: Desde [aqui](https://docs.docker.com/install/) pueden instalar Docker.
-  * 2 - Docker Compose: [Aqui](https://docs.docker.com/compose/install/) la documentación con los pasos para instalar Docker Compose. 
+  * 1 - Docker: Desde [Aquí](https://docs.docker.com/install/) pueden instalar Docker.
+  * 2 - Docker Compose: [Aquí](https://docs.docker.com/compose/install/) la documentación con los pasos para instalar Docker Compose. 
 
 
-## Introduccion 
+## Introducción 
 
 
 En este hands-on  comprenderemos las bases de una red blockchain y los componentes que la integran, veremos cómo funciona y cuales son las ventajas de IBM Blockchain Platform y llevaremos a cabo 3 laboratorios: 
@@ -52,9 +52,8 @@ En este hands-on  comprenderemos las bases de una red blockchain y los componen
 ## ¿Que es Blockchain? 
 
 
- Blockchain es un ledger (libro contable en inglés) seguro y compartido entre los participantes de la red de negocios, en el cual se registran todas las transacciones de la red. Podemos ver a blockchain como una base de datos distribuida en la que todos los miembros cuentan con una copia de los datos.
- Los participantes la red son los que gobiernan y acuerdan los cambios a registrar a través de un mecanismo de consenso. No hay terceros involucrados, todo se entre peers
-
+Blockchain es una base de datos distribuida que funciona como un "ledger" (libro contable en inglés), en el cual se registran todas las transacciones que los miembros de la red ejecutan entre si. En Blockchain todos los miembros cuanta con una copia de los datos.
+Los participantes de la red son los que gobiernan y acuerdan los cambios a registrar a través de un mecanismo de consenso. No hay terceros involucrados, todo es entre peers.
 
 <p align="center">
   <img src="assets/images/blockchain1.png" width="350">
@@ -62,7 +61,6 @@ En este hands-on  comprenderemos las bases de una red blockchain y los componen
 
 
 ### Smart Contract 
-
 
 Un Smart Contract es la manera digital de representar los contratos por los que se rigen las transacciones de la red. A la hora de realizar una transacción en una red de blockchain, se realiza una petición al Smart Contract y este es el que se encarga de la modificación del ledge. 
 La lógica de el Smart Contract se puede escribir en varios lenguajes de programación y se trabaja de una forma muy similar a POO (programación orientada a objetos), llevaremos esto a la práctica en el lab1 donde generamos nuestro primero smart contract. En el caso de HyperLedger Fabric, el codigo resultante se le denomina chaincode. El chaincode es el código que define los activos en la red de negocios y las instrucciones de las transacciones que modifican los mismos.
