@@ -69,6 +69,11 @@ La lógica del Smart Contract se puede escribir en varios lenguajes de programac
 *Nota:* **Activo (Asset)**: Es cualquier cosa que podemos apropiar o controlar y que nos genera valor.
 
 
+### Channel
+
+Un canal es una subnet privada de comunicación entre dos o más miembros de la red. Cada transacción en la red se ejecuta sobre un canal, dónde cada participante debe estar autenticado y autorizado para ejecutar la misma.
+
+
 ### Hyperledger Fabric 
 
 
